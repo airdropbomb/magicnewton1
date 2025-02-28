@@ -582,25 +582,16 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(chalk.yellow(`
-░▀▀█░█▀█░▀█▀░█▀█
-░▄▀░░█▀█░░█░░█░█
-░▀▀▀░▀░▀░▀▀▀░▀░▀
-╔══════════════════════════════════╗
-║                                  ║
-║  ${chalk.green("ZAIN ARAIN")}                      ║
-║  ${chalk.cyan("AUTO SCRIPT MASTER")}              ║
-║                                  ║
-║  ${chalk.magenta("JOIN TELEGRAM CHANNEL NOW!")}      ║
-║  ${chalk.blue("https://t.me/AirdropScript6")}              ║
-║  ${chalk.green("@AirdropScript6 - OFFICIAL")}      ║
-║  ${chalk.green("CHANNEL")}                         ║
-║                                  ║
-║  ${chalk.red("FAST - RELIABLE - SECURE")}        ║
-║  ${chalk.cyan("SCRIPTS EXPERT")}                  ║
-║                                  ║
-╚══════════════════════════════════╝
-`));
+  console.log(`
+█████╗ ██████╗ ██████╗     ███╗   ██╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██╔══██╗██╔══██╗    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝
+███████║██║  ██║██████╔╝    ██╔██╗ ██║██║   ██║██║  ██║█████╗  
+██╔══██║██║  ██║██╔══██╗    ██║╚██╗██║██║   ██║██║  ██║██╔══╝  
+██║  ██║██████╔╝██████╔╝    ██║ ╚████║╚██████╔╝██████╔╝███████╗
+╚═╝  ╚═╝╚═════╝ ╚═════╝     ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝   
+            ${chalk.yellow('Magicnewton')}                
+📢  ${chalk.yellow('Telegram Channel: https://t.me/airdropbombnode')}
+`);
 
   if (!settings.USE_PROXY) {
     console.log(chalk.yellow("You are running bot without proxies!!!"));
@@ -610,7 +601,7 @@ async function main() {
   const { endpoint: hasIDAPI, message } = await checkBaseUrl();
   if (!hasIDAPI) return console.log(`API ID not found, try again later!`.red);
   console.log(`${message}`.yellow);
-  // process.exit();
+
   queryIds.map((val, i) => new ClientAPI(val, i, proxies[i], hasIDAPI).createUserAgent());
 
   await sleep(1);
@@ -671,26 +662,19 @@ async function main() {
       }
     }
 
+    // ဒီနေရာမှာ banner ကို ပိုအသုံးဝင်အောင် ပြင်ထားတယ်
     await sleep(3);
-    console.log(`\x1b[33m
-░▀▀█░█▀█░▀█▀░█▀█
-░▄▀░░█▀█░░█░░█░█
-░▀▀▀░▀░▀░▀▀▀░▀░▀
-╔══════════════════════════════════╗
-║                                  ║
-║  ZAIN ARAIN                      ║
-║  AUTO SCRIPT MASTER              ║
-║                                  ║
-║  JOIN TELEGRAM CHANNEL NOW!      ║
-║  https://t.me/AirdropScript6      ║
-║  @AirdropScript6 - OFFICIAL      ║
-║  CHANNEL                         ║
-║                                  ║
-║  FAST - RELIABLE - SECURE        ║
-║  SCRIPTS EXPERT                  ║
-║                                  ║
-╚══════════════════════════════════╝\x1b[0m`);
-    console.log(`=============${new Date().toLocaleString()} | Complete all accounts | Waiting ${settings.TIME_SLEEP} minute=============`.magenta);
+    console.log(`
+ █████╗ ██████╗ ██████╗     ███╗   ██╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██╔══██╗██╔══██╗    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝
+███████║██║  ██║██████╔╝    ██╔██╗ ██║██║   ██║██║  ██║█████╗  
+██╔══██║██║  ██║██╔══██╗    ██║╚██╗██║██║   ██║██║  ██║██╔══╝  
+██║  ██║██████╔╝██████╔╝    ██║ ╚████║╚██████╔╝██████╔╝███████╗
+╚═╝  ╚═╝╚═════╝ ╚═════╝     ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝   
+            ${chalk.yellow('Magicnewton')}                
+📢  ${chalk.yellow(`Completed all accounts at ${new Date().toLocaleString()}`)}
+`);
+    console.log(`============= Waiting ${settings.TIME_SLEEP} minute before next run =============`.magenta);
     await sleep(settings.TIME_SLEEP * 60);
   }
 }
