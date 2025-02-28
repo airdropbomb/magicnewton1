@@ -15,8 +15,7 @@ async function checkBaseUrl() {
   } else {
     return {
       endpoint: settings.BASE_URL,
-      message:
-        "Zain",
+      message: "Using default base URL", // "Zain" အစား အသုံးဝင်တဲ့ မက်ဆေ့ချ်
     };
   }
 }
@@ -30,15 +29,13 @@ async function getBaseApi(url) {
     } else {
       return {
         endpoint: null,
-        message:
-          "Zain",
+        message: "API endpoint not found in remote config", // "Zain" အစား ရှင်းတဲ့ မက်ဆေ့ချ်
       };
     }
   } catch (e) {
     return {
       endpoint: null,
-      message:
-        "Zain",
+      message: "Failed to fetch API endpoint config", // "Zain" အစား error မက်ဆေ့ချ်
     };
   }
 }
