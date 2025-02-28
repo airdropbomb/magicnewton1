@@ -12,8 +12,8 @@ An automated roll dice for managing multiple magicnewton accounts with proxy sup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/airdropbomb/3Dos-Auto-Bot.git
-cd 3Dos-Auto-Bot
+git clone https://github.com/airdropbomb/magicnewton1.git
+cd magicnewton1
 ```
 
 2. Install dependencies:
