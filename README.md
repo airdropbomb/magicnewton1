@@ -28,7 +28,15 @@ npm install
    ```
 ![photo_2025-02-22_18-47-59](https://github.com/user-attachments/assets/59f826b5-e1ae-4f4c-a630-206fc3fca35b)
 
-4. Run the Node
+4.   - `proxy.txt` (optional): Add your proxies (one per line)
+   ```
+   http://ip:port
+   http://username:pass@ip:port
+   socks4://ip:port
+   socks5://username:pass@ip:port
+   ```
+
+5. Run the Node
 ```bash
 node main.js
 ```
