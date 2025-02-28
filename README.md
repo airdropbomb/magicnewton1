@@ -10,25 +10,25 @@ An automated roll dice for managing multiple magicnewton accounts with proxy sup
 
 - ## 🚀 Installation
 
-1. Clone the repository:
+# 1. Clone the repository:
 ```bash
 git clone https://github.com/airdropbomb/magicnewton1.git
 cd magicnewton1
 ```
 
-2. Install dependencies:
+# 2. Install dependencies:
 ```bash
 npm install
 ```
 
-3.  - `data.txt`: Add your tokens (one per line, matching order with secrets)
+# 3.  - `data.txt`: Add your tokens (one per line, matching order with secrets)
    ```
    token1
    token2
    ```
 ![photo_2025-02-22_18-47-59](https://github.com/user-attachments/assets/59f826b5-e1ae-4f4c-a630-206fc3fca35b)
 
-4.   - `proxy.txt` (optional): Add your proxies (one per line)
+# 4.   - `proxy.txt` (optional): Add your proxies (one per line)
    ```
    http://ip:port
    http://username:pass@ip:port
@@ -36,7 +36,7 @@ npm install
    socks5://username:pass@ip:port
    ```
 
-5. Run the Node
+# 5. Run the Node
 ```bash
 node main.js
 ```
